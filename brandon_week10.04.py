@@ -32,8 +32,8 @@ def main():
 
 
     clean_first, clean_last = clean_name(first, last)
-    name2 = username(clean_first,clean_last)
-    print(f'Username: {name2}')
+    user = username(clean_first,clean_last)
+    print(f'Username: {user}')
 
 
 if __name__ == '__main__':

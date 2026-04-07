@@ -26,11 +26,8 @@ def apply_discount(bill,discount):
 def main():
     ##define inputs, format percentages, call functions, print formatted output
     bill = float(input('Enter subtotal: '))
-    discount = float(input('Enter discount percent: '))
-    tax = float(input('Enter tax rate percent: '))
-
-    discount = discount / 100
-    tax = tax / 100
+    discount = (float(input('Enter discount percent: '))) / 100
+    tax = (float(input('Enter tax rate percent: '))) / 100
 
     discounted = apply_discount(bill,discount)
     taxes = apply_tax(discounted,tax)

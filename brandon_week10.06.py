@@ -29,11 +29,10 @@ def main():
 
     for i in range(temp):
         temps.append(float(input(f'Enter temperature {i+1}: ')))
+
     min_temp = update_min(temps)
     max_temp = update_max(temps)
     print(f'Minimum: {min_temp}\nMaximum: {max_temp}')
-
-    return temps
 
 if __name__ == '__main__':
     main()

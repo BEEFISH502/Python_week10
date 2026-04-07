@@ -43,7 +43,7 @@ def main():
 
 
     print(f'Average: {avg}\nLetter grade: {grade}')
-    return scores
+
 
 if __name__ == '__main__':
     main()

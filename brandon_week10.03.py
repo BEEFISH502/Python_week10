@@ -18,12 +18,12 @@ functions:
 
 '''
 #this calculates the cost price of our total usage
-def calc_cost(kwh,rate):
+def kwh_cost(kwh,rate):
     cost = kwh * rate
     return cost
 
 #this then adds our total usage with our flat fee
-def subtotal(cost,fee):
+def final_bill(cost,fee):
     subtotal = cost + fee
     return subtotal
 
@@ -33,7 +33,8 @@ def main():
     rate = float(input('Enter rate per kWh: '))
     fee = float(input('Enter service fee: '))
 
-    total = subtotal(calc_cost(kwh,rate),fee)
+##not sure if this is acceptable but I wanted to see if i could do this in 1 line instead of multiple##
+    total = final_bill(kwh_cost(kwh,rate),fee)
     print(f'Final bill: {total:.1f}')
 
 if __name__ == '__main__':

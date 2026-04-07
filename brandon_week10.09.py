@@ -13,17 +13,21 @@ main()
 percent calculater ((part/whole) *100)
 
 '''
-def percent(students, A):
-    percent_A = ( A / students ) * 100
+def percent(part,whole):
+    return (part/whole) * 100
 
 def main():
-    students = int(input('Enter total number of students: '))
-    A = int(input('Enter number choosing Option A: '))
+    whole = int(input(f'Enter total students: '))
+    part = int(input(f'Enter number choosing Option A: '))
 
-    total = percent(students, A)
-    print(f'Option A percent: {total:.1f}')
+    percent_A = percent(part,whole)
+    print(f'Option A percent: {percent_A}')
 
-main()
+if __name__ == '__main__':
+    main()
+
+
+
 
 
 
